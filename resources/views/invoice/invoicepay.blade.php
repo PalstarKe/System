@@ -176,12 +176,12 @@
                                     @endif
 
                                     @if (($invoice->invoice_module == 'legalcase' ||
-                                          $invoice->invoice_module == 'lms' ||
-                                          $invoice->invoice_module == 'sales' ||
-                                          $invoice->invoice_module == 'newspaper' ||
-                                          $invoice->invoice_module == 'RestaurantMenu' ||
-                                          $invoice->invoice_module == 'Fleet') &&
-                                          !empty($commonCustomer))
+                                        $invoice->invoice_module == 'lms' ||
+                                        $invoice->invoice_module == 'sales' ||
+                                        $invoice->invoice_module == 'newspaper' ||
+                                        $invoice->invoice_module == 'RestaurantMenu' ||
+                                        $invoice->invoice_module == 'Fleet') &&
+                                        !empty($commonCustomer))
                                         <div class="col">
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -666,7 +666,7 @@
                                                         @elseif ($invoice->invoice_module == 'Fleet')
                                                             <b>{{ currency_format_with_sym($invoice->getFleetSubTotal(),$invoice->created_by, $invoice->workspace) }}</b>
                                                         @else
-                                                           <b> {{ currency_format_with_sym($invoice->getTotal(),$invoice->created_by, $invoice->workspace) }}</b>
+                                                            <b> {{ currency_format_with_sym($invoice->getTotal(),$invoice->created_by, $invoice->workspace) }}</b>
                                                         @endif
                                                     </td>
                                                 </tr>
