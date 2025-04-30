@@ -7,15 +7,7 @@
                 {{-- <img src="{{ get_file(sidebar_logo()) }}{{ '?' . time() }}" alt="" class="logo logo-sm" /> --}}
             </a>
         </div>
-        {{-- sidebar search --}}
-        <div class="px-3 sidebar-search">
-            <div class="search-container">
-                <i class="ti ti-search search-icon"></i>
-                <input type="text"
-                    class="form-control form-control-sm sidebar-search-input search-input"
-                    placeholder="{{ __('Search . . .') }}" aria-label="Search" />
-            </div>
-        </div>
+
         @if(!empty($company_settings['category_wise_sidemenu']) && $company_settings['category_wise_sidemenu'] == 'on')
           <div class="tab-container">
             <div class="tab-sidemenu">

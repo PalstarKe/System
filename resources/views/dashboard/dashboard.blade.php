@@ -142,7 +142,7 @@
                             </div>
                             <a href="{{ route('users.index') }}"><h3 class="mt-3 mb-0 text-danger">{{ __('Total Customers') }}</h3></a>
                             <h6 class="text-danger pt-3">{{ __('Paid Customers') }} </h6>
-                            <h4 class="text-dark">{{ $user['total_paid_user'] }}</h4>
+                            <h4 class="text-info">{{ $user['total_paid_user'] }}</h4>
                         </div>
                         <h3 class="mb-0">{{ $user->total_user }}</h3>
                     </div>
@@ -156,8 +156,8 @@
                                 <i class="ti ti-shopping-cart"></i>
                             </div>
                             <a href="{{ route('plan.order.index') }}"><h3 class="mt-3 mb-0">{{ __('Total Orders') }}</h3></a>
-                             <h6 class="text-primary pt-3">{{ __('Order Amount') }}</h6>
-                             <h4 class="text-dark">{{ super_currency_format_with_sym($user['total_orders_price']) }}</h4>
+                                <h6 class="text-primary pt-3">{{ __('Order Amount') }}</h6>
+                                <h4 class="text-info">{{ super_currency_format_with_sym($user['total_orders_price']) }}</h4>
                         </div>
                         <h3 class="mb-0">{{ $user->total_orders }}</h3>
                     </div>
@@ -172,7 +172,7 @@
                             </div>
                             <a href="{{ route('plan.list') }}"><h3 class="mt-3 mb-0">{{ __('Total Plans') }}</h3></a>
                             <h6 class="text-warning mt-2">{{ __('Popular Plan') }}</h6>
-                            <h4 class="text-dark">{{ !empty($user->popular_plan) ? $user->popular_plan->name : '' }}</h4>
+                            <h4 class="text-info">{{ !empty($user->popular_plan) ? $user->popular_plan->name : '' }}</h4>
                         </div>
                         <h3 class="mb-0">{{ $user->total_plans }}</h3>
                     </div>

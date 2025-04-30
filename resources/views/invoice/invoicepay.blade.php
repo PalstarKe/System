@@ -593,7 +593,7 @@
                                                     @elseif($invoice->invoice_module == 'cmms')
                                                         <td class="bg-color"><b>{{ $totalQuantity,$invoice->created_by, $invoice->workspace }}</b></td>
                                                         <td class="bg-color"><b>{{ currency_format_with_sym($totalRate,$invoice->created_by, $invoice->workspace) }}</b></td>
-                                                        <td class="bg-color"><b>{{ currency_format_with_sym($totalDiscount,$invoice->created_by, $invoice->workspace) }}</b></td>
+                                                        <td class="bg-color"><b>{{ currencygit commit -m "first commit"_format_with_sym($totalDiscount,$invoice->created_by, $invoice->workspace) }}</b></td>
                                                         <td class="bg-color"><b>{{ currency_format_with_sym($totalTaxPrice,$invoice->created_by, $invoice->workspace) }}</b></td>
                                                     @elseif($invoice->invoice_module == 'childcare')
                                                         <td class="bg-color"><b>{{ currency_format_with_sym($commonSubtotal,$invoice->created_by, $invoice->workspace) }}</b></td>
